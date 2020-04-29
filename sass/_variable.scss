@@ -1,0 +1,83 @@
+$azul: #131B2C;
+$celeste: #5CD6B5;
+$violeta: #5C006A;
+$rosa: #FFAEB9;
+$naranja: #FF7A00;
+$crema: #ECE3D6;
+
+
+@mixin notomedium { 
+                    font-family: 'Noto Serif JP', serif;
+                    font-weight: 500;
+                }
+
+@mixin notoblack { 
+                    font-family: 'Noto Serif JP', serif;
+                    font-weight: 900;
+                }
+
+@mixin robolight { 
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 300;
+                }
+
+@mixin roboregular { 
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                }
+
+@mixin robobold { 
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
+                }
+
+@mixin dos_columnas { 
+                        display: grid;  
+                        grid-template-columns: 1fr 1fr; 
+                        grid-template-rows: 1fr;
+                    }
+
+@mixin dos_filas {
+                    display: grid;  
+                    grid-template-columns: 1fr; 
+                    grid-template-rows: 1fr 1fr;
+                }
+
+@mixin parrafo { @include robolight;
+                color: $azul;
+                font-size: 15px;
+                line-height: 25px;}
+
+@mixin parrafo_naranja {    @include robolight;
+                            color: $naranja;
+                            font-size: 15px;
+                            line-height: 25px;}
+
+@mixin titulos {    
+                @include notoblack;
+                color: $azul;
+                font-size: 30px;
+                }
+
+@mixin titulos_naranja {    
+                @include notoblack;
+                color: $naranja;
+                font-size: 30px;
+                }
+    
+@mixin boton_rosa { 
+	    background-color: $rosa;
+        border: none;
+        color: $azul;
+        border-radius: 12px;
+        padding: 5px 30px 5px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        @include roboregular;
+        }
+	
